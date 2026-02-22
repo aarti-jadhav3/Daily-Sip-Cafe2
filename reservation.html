@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Table Reservation | Daily Sip Cafe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">Daily Sip Cafe</div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="reservation.html" class="active">Reservation</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <!-- Reservation Hero -->
+  <section class="reservation-hero">
+    <h1>Reserve Your Table</h1>
+    <p>Good coffee tastes even better when shared</p>
+  </section>
+
+  <!-- Reservation Form -->
+  <section class="reservation-section">
+    <form id="reservationForm" class="reservation-form">
+
+      <div class="form-group">
+        <label>Full Name</label>
+        <input type="text" id="name" placeholder="Your full name">
+      </div>
+
+      <div class="form-group">
+        <label>Phone Number</label>
+        <input type="tel" id="phone" placeholder="10-digit mobile number">
+      </div>
+
+      <div class="form-group">
+        <label>Date</label>
+        <input type="date" id="date">
+      </div>
+
+      <div class="form-group">
+        <label>Time</label>
+        <input type="time" id="time">
+      </div>
+
+      <div class="form-group">
+        <label>Number of Guests</label>
+        <input type="number" id="guests" min="1" max="20" placeholder="e.g. 2">
+      </div>
+
+      <button type="submit" class="btn primary">Confirm Reservation</button>
+
+      <p id="message" class="message"></p>
+    </form>
+    <h2 style="margin-top:40px;">All Reservations</h2>
+    <ul id="reservationList"></ul>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2026 Daily Sip Cafe | We look forward to serving you ☕</p>
+  </footer>
+
+  <script src="js/reservation.js"></script>
+</body>
+
+</html>

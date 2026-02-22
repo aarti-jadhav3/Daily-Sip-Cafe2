@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Online Order | Daily Sip Cafe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">Daily Sip Cafe</div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="order.html" class="active">Order Online</a>
+    </nav>
+  </header>
+
+  <!-- Order Section -->
+  <section class="order-section">
+    <h1>Order Online</h1>
+
+    <div class="order-container">
+      <h1>Order Online</h1>
+
+      <!-- <div class="menu-items">
+        <button onclick="addItem('Cappuccino', 150)">Cappuccino - ₹150</button>
+        <button onclick="addItem('Latte', 180)">Latte - ₹180</button>
+        <button onclick="addItem('Espresso', 120)">Espresso - ₹120</button>
+        <button onclick="addItem('Sandwich', 200)">Sandwich - ₹200</button>
+        <button onclick="addItem('Brownie', 100)">Brownie - ₹100</button>
+      </div>
+
+      <h3>Selected Items:</h3>
+      <ul id="cartList"></ul>
+
+      <h3>Total: ₹<span id="total">0</span></h3>
+
+      <form id="orderForm">
+        <input type="text" id="orderName" placeholder="Your Name" required />
+        <input type="tel" id="orderPhone" placeholder="Phone Number" required />
+        <button type="submit">Place Order</button>
+      </form>
+
+      <p id="orderMessage"></p>
+
+      <hr>
+
+      <h2>All Orders</h2>
+      <ul id="orderHistory"></ul>
+
+      <script src="js/order.js"></script> -->
+
+      Menu Items
+      <!-- <div class="order-menu"> -->
+        <h2>Menu</h2>
+
+        <div class="order-item">
+          <span>Cappuccino</span>
+          <span>₹180</span>
+          <button onclick="addToCart('Cappuccino',180)">Add</button>
+        </div>
+
+        <div class="order-item">
+          <span>Cold Brew</span>
+          <span>₹200</span>
+          <button onclick="addToCart('Cold Brew',200)">Add</button>
+        </div>
+
+        <div class="order-item">
+          <span>French Fries</span>
+          <span>₹140</span>
+          <button onclick="addToCart('French Fries',140)">Add</button>
+        </div>
+
+        <div class="order-item">
+          <span>Chocolate Muffin</span>
+          <span>₹120</span>
+          <button onclick="addToCart('Chocolate Muffin',120)">Add</button>
+        </div>
+      </div>
+
+      Cart -->
+      <div class="cart">
+        <h2>Your Cart</h2>
+        <div id="cartItems"></div>
+
+        <div class="cart-total">
+          Total: ₹<span id="total">0</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Checkout -->
+  <section class="checkout">
+    <h2>Checkout</h2>
+    <form id="checkoutForm">
+      <input type="text" placeholder="Full Name" required>
+      <input type="tel" placeholder="Phone Number" required>
+      <button type="submit">Place Order</button>
+      <p id="orderMessage"></p>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 Daily Sip Cafe | Freshly prepared for you ☕</p>
+  </footer>
+
+  <script src=

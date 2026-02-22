@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Menu | Daily Sip Cafe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">Daily Sip Cafe</div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="menu.html" class="active">Menu</a>
+      <a href="about.html">About</a>
+      <a href="reservation.html">Reservation</a>
+    </nav>
+  </header>
+
+  <!-- Menu Hero -->
+  <section class="menu-hero">
+    <h1>Our Menu</h1>
+    <p>Crafted with care, served with warmth</p>
+  </section>
+
+  <!-- Filter Buttons -->
+  <section class="menu-filters">
+    <button class="filter-btn active" data-category="all">All</button>
+    <button class="filter-btn" data-category="coffee">Coffee</button>
+    <button class="filter-btn" data-category="tea">Tea</button>
+    <button class="filter-btn" data-category="snacks">Snacks</button>
+    <button class="filter-btn" data-category="desserts">Desserts</button>
+  </section>
+
+  <!-- Menu Items -->
+  <section class="menu-grid">
+
+    <div class="menu-card coffee bestseller">
+      <h3>Cappuccino ⭐</h3>
+      <p>Rich espresso with steamed milk foam</p>
+      <span>₹180</span>
+    </div>
+
+    <div class="menu-card coffee">
+      <h3>Cafe Latte</h3>
+      <p>Smooth espresso blended with milk</p>
+      <span>₹170</span>
+    </div>
+
+    <div class="menu-card tea">
+      <h3>Masala Chai</h3>
+      <p>Classic Indian spiced tea</p>
+      <span>₹90</span>
+    </div>
+
+    <div class="menu-card tea bestseller">
+      <h3>Green Tea ⭐</h3>
+      <p>Refreshing and calming brew</p>
+      <span>₹110</span>
+    </div>
+
+    <div class="menu-card snacks">
+      <h3>Grilled Sandwich</h3>
+      <p>Cheesy and perfectly toasted</p>
+      <span>₹160</span>
+    </div>
+
+    <div class="menu-card snacks bestseller">
+      <h3>French Fries ⭐</h3>
+      <p>Crispy golden fries</p>
+      <span>₹140</span>
+    </div>
+
+    <div class="menu-card desserts">
+      <h3>Chocolate Muffin</h3>
+      <p>Soft, rich, and chocolaty</p>
+      <span>₹120</span>
+    </div>
+
+    <div class="menu-card desserts bestseller">
+      <h3>Cheesecake ⭐</h3>
+      <p>Classic creamy delight</p>
+      <span>₹220</span>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2026 Daily Sip Cafe | Brewed Fresh Daily</p>
+  </footer>
+
+  <script src="js/menu.js"></script>
+</body>
+</html>

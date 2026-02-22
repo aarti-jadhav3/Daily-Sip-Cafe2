@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gallery | Daily Sip Cafe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">Daily Sip Cafe</div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="gallery.html" class="active">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Gallery Hero -->
+  <section class="gallery-hero">
+    <h1>Our Cafe Moments</h1>
+    <p>Where coffee, comfort, and memories come together</p>
+  </section>
+
+  <!-- Gallery Grid -->
+  <section class="gallery-section">
+    <div class="gallery-grid">
+      <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" onclick="openLightbox(this)">
+      <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085" onclick="openLightbox(this)">
+      <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348" onclick="openLightbox(this)">
+      <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0" onclick="openLightbox(this)">
+      <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814" onclick="openLightbox(this)">
+      <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb" onclick="openLightbox(this)">
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <img id="lightboxImg">
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2026 Daily Sip Cafe | Capturing cozy moments ☕</p>
+  </footer>
+
+  <script src="js/gallery.js"></script>
+</body>
+</html>
